@@ -1,5 +1,6 @@
 {
   "name": "desafio-agendamento-petshop",
+  "description": "Projeto Web de agendamento de consulta no petshop",
   "private": true,
   "version": "0.0.0",
   "type": "module",
