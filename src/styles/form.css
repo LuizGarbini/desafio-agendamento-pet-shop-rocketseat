@@ -8,10 +8,14 @@
   padding: 5rem;
   padding-bottom: 1.5rem;
 
-  display: flex;
+  display: none;
   flex-direction: column;
 
   overflow-y: scroll;
+}
+
+.form.open{
+  display: flex;
 }
 
 .form > header {
@@ -64,7 +68,7 @@
 }
 
 .input:focus-within {
-  border: 1.5px solid #9282FA;
+  border: 1.5px solid #9282fa;
 }
 
 .button {
