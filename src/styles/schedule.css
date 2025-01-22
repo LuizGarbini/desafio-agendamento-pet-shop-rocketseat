@@ -1,10 +1,21 @@
 .schedule {
   grid-area: schedule;
   padding: 5rem 7.75rem;
+  max-width: 1220px;
+  width: 100%;
 }
 
 .schedule > header {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 2rem;
+  align-items: center;
+}
+
+.schedule > header .title {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
 .schedule > header h1 {
@@ -18,9 +29,9 @@
 }
 
 .schedule-period {
-  border: 1px solid #2e2c30;
   border-radius: 0.5rem;
   margin-bottom: 0.75rem;
+  background: #23242c;
 }
 
 .schedule-period header {
@@ -41,13 +52,14 @@
 
 .schedule-period header strong {
   flex: 1;
-  color: #98959d;
-  font-size: 0.87rem;
+  color: #ffffff;
+  font-size: 1rem;
 }
 
 .schedule-period header span {
   font-size: 0.87rem;
-  color: #98959d;
+  color: #86818c;
+  font-weight: bold;
 }
 
 .schedule-period ul {
@@ -79,6 +91,28 @@
 
 .schedule-period ul li strong {
   margin-right: 1.25rem;
+}
+
+.button-new-schedule {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.button-new-schedule button {
+  font-size: 1rem;
+  padding: 20px 12px;
+  background-color: #9282fa;
+  border-radius: 0.5rem;
+  color: #050505;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+}
+
+.button-new-schedule button:hover {
+  background-color: #bdb4fa;
 }
 
 @media (max-width: 1100px) {

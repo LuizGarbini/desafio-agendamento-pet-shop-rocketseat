@@ -18,7 +18,7 @@
   <div class="container">
     <img src="./src/assets/logo.svg" alt="Logo" class="logo" />
 
-    <form class="form">
+    <form class="form invisible">
       <header>
         <h1>Agende um atendimento</h1>
         <p>
@@ -71,8 +71,16 @@
 
     <aside class="schedule">
       <header>
-        <h1>Sua agenda</h1>
-        <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+        <div class="title">
+          <h1>Sua agenda</h1>
+          <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+        </div>
+        <form class="form-date-select">
+          <div class="input">
+            <i><img src="./src/assets/calendar.svg" alt="Calendário" /></i>
+            <input type="date" id="date" name="date" required />
+          </div>
+        </form>
       </header>
 
       <section class="schedule-period">
@@ -130,6 +138,9 @@
         </ul>
       </section>
     </aside>
+  </div>
+  <div class="button-new-schedule">
+    <button>Novo Agendamento</button>
   </div>
 </body>
 

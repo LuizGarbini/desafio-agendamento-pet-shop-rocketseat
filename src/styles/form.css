@@ -2,7 +2,7 @@
   grid-area: form;
   max-width: 512px;
 
-  background-color: #23242C;
+  background-color: #23242c;
   border-radius: 0.75rem;
 
   padding: 5rem;
@@ -44,7 +44,6 @@
   border-radius: 0.5rem;
 
   display: flex;
-  margin-bottom: 1.5rem;
 }
 
 .input i {
@@ -65,7 +64,7 @@
 }
 
 .input:focus-within {
-  border: 1.5px solid #b8952e;
+  border: 1.5px solid #9282FA;
 }
 
 .button {
@@ -151,4 +150,8 @@
     overflow-y: auto;
     max-width: 100%;
   }
+}
+
+.form.invisible {
+  display: none;
 }

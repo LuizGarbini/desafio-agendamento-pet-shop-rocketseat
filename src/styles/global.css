@@ -22,8 +22,9 @@
 }
 
 body {
-  background-color: #14151D;
+  background-color: #14151d;
   color: #f5f4f5;
+  position: relative;
 }
 
 .container {
@@ -33,6 +34,7 @@ body {
   grid-template-areas: "form schedule";
 
   padding: 0.75rem;
+  justify-items: center;
 }
 
 .logo {
