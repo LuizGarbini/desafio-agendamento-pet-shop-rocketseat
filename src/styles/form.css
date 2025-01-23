@@ -14,8 +14,9 @@
   overflow-y: scroll;
 }
 
-.form.open{
+.form.open {
   display: flex;
+  margin: auto;
 }
 
 .form > header {

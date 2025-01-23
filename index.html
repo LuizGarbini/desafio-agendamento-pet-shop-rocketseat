@@ -18,30 +18,31 @@
   <div class="container">
     <img src="./src/assets/logo.svg" alt="Logo" class="logo" />
 
-    <form id="dialog" popover class="form">
-      <header>
-        <h1>Agende um atendimento</h1>
-        <p>
-          Selecione data, horário e informe o nome do cliente para criar o
-          agendamento
-        </p>
-      </header>
+    <div class="container-blur">
+      <form id="dialog" popover class="form">
+        <header>
+          <h1>Agende um atendimento</h1>
+          <p>
+            Selecione data, horário e informe o nome do cliente para criar o
+            agendamento
+          </p>
+        </header>
 
-      <label for="date" class="label">Data</label>
-      <div class="input">
-        <i><img src="./src/assets/calendar.svg" alt="Calendário" /></i>
-        <input type="date" id="date-new-schedule" name="date" required />
-      </div>
+        <label for="date" class="label">Data</label>
+        <div class="input">
+          <i><img src="./src/assets/calendar.svg" alt="Calendário" /></i>
+          <input type="date" id="date-new-schedule" name="date" required />
+        </div>
 
-      <span class="label">Horários</span>
-      <ul id="hours" class="hours" aria-label="Horários disponíveis de manhã">
-        <!-- Exemplo: Manhã 
+        <span class="label">Horários</span>
+        <ul id="hours" class="hours" aria-label="Horários disponíveis de manhã">
+          <!-- Exemplo: Manhã 
           <li data-period="morning" class="hour-period">Manhã</li>
           <li data-period="morning" value="09:00" class="hour hour-available">
             09:00
           </li>
           -->
-        <!-- Exemplo: Tarde  
+          <!-- Exemplo: Tarde  
           <li data-period="afternoon" class="hour-period">Tarde</li>
           <li
             data-period="afternoon"
@@ -51,23 +52,24 @@
             13:00
           </li>
           -->
-        <!-- Exemplo: Noite 
+          <!-- Exemplo: Noite 
           <li data-period="night" class="hour-period">Noite</li>
 
           <li data-period="night" value="19:00" class="hour hour-available">
             19:00
           </li>
           -->
-      </ul>
+        </ul>
 
-      <label for="client" class="label">Cliente</label>
-      <div class="input">
-        <i><img src="./src/assets/person.svg" alt="Calendário" /></i>
-        <input type="text" id="client" name="client" placeholder="Nome do cliente" required />
-      </div>
+        <label for="client" class="label">Cliente</label>
+        <div class="input">
+          <i><img src="./src/assets/person.svg" alt="Calendário" /></i>
+          <input type="text" id="client" name="client" placeholder="Nome do cliente" required />
+        </div>
 
-      <button type="submit" class="button">Agendar</button>
-    </form>
+        <button type="submit" class="button">Agendar</button>
+      </form>
+    </div>
 
     <aside class="schedule">
       <header>
