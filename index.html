@@ -23,16 +23,23 @@
         <header>
           <h1>Agende um atendimento</h1>
           <p>
-            Selecione data, horário e informe o nome do cliente para criar o
-            agendamento
+            Preencha os dados do cliente para realizar o agendamento:
           </p>
         </header>
 
-        <label for="date" class="label">Data</label>
+
+        <label for="client" class="label">Nome do tutor</label>
         <div class="input">
-          <i><img src="./src/assets/calendar.svg" alt="Calendário" /></i>
-          <input type="date" id="date-new-schedule" name="date" required />
+          <i><img src="./src/assets/person.svg" alt="Calendário" /></i>
+          <input type="text" id="client" name="client" placeholder="Nome do cliente" required />
         </div>
+
+        <label for="client" class="label">Nome do pet</label>
+        <div class="input">
+          <i><img src="./src/assets/pet.svg" alt="Calendário" /></i>
+          <input type="text" id="pet" name="pet" placeholder="Cheddar" required />
+        </div>
+
 
         <span class="label">Horários</span>
         <ul id="hours" class="hours" aria-label="Horários disponíveis de manhã">
@@ -61,10 +68,11 @@
           -->
         </ul>
 
-        <label for="client" class="label">Cliente</label>
+
+        <label for="date" class="label">Data</label>
         <div class="input">
-          <i><img src="./src/assets/person.svg" alt="Calendário" /></i>
-          <input type="text" id="client" name="client" placeholder="Nome do cliente" required />
+          <i><img src="./src/assets/calendar.svg" alt="Calendário" /></i>
+          <input type="date" id="date-new-schedule" name="date" required />
         </div>
 
         <button type="submit" class="button">Agendar</button>

@@ -5,7 +5,7 @@
   background-color: #23242c;
   border-radius: 0.75rem;
 
-  padding: 5rem;
+  padding: 2.344rem 2.5rem;
   padding-bottom: 1.5rem;
 
   display: none;
@@ -20,13 +20,18 @@
 }
 
 .form > header {
-  max-width: 21rem;
-  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+
+  margin-bottom: 1.75rem;
+  max-width: 100%;
 }
 
 .form > header h1 {
   font-size: 1.5rem;
   font-weight: 700;
+  color: #ffffff;
 }
 
 .form > header p {
@@ -38,6 +43,7 @@
   font-size: 1rem;
   color: #b2afb6;
   font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 .input {
@@ -46,6 +52,7 @@
 
   border: 1px solid #3e3c41;
   padding: 0.87rem 0.75rem;
+  margin-bottom: 1rem;
   border-radius: 0.5rem;
 
   display: flex;
