@@ -41,7 +41,7 @@
 
 .label {
   font-size: 1rem;
-  color: #b2afb6;
+  color: #ffffff;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -62,13 +62,14 @@
   margin-right: 0.5rem;
 }
 
-.input input {
+.input input,
+.input select {
   flex: 1;
 
   font-family: "Catamaran", sans-serif;
 
   font-size: 1rem;
-  color: #b2afb6;
+  color: #98959d;
   background-color: transparent;
 
   outline: none;
@@ -166,4 +167,9 @@
 
 .form.invisible {
   display: none;
+}
+
+.column-break {
+  display: flex;
+  gap: 1rem;
 }
