@@ -1,5 +1,6 @@
 .form {
-  grid-area: form;
+  display: none;
+  margin: auto;
   max-width: 512px;
 
   background-color: #23242c;
@@ -8,15 +9,22 @@
   padding: 2.344rem 2.5rem;
   padding-bottom: 1.5rem;
 
-  display: none;
   flex-direction: column;
-
-  overflow-y: scroll;
 }
 
 .form.open {
   display: flex;
+}
+
+.container-blur {
+  display: none;
+}
+
+.container-blur.open {
+  display: flex;
   margin: auto;
+  background: transparent;
+  backdrop-filter: blur(5px);
 }
 
 .form > header {
@@ -66,7 +74,7 @@
 .input select {
   flex: 1;
 
-  font-family: "Catamaran", sans-serif;
+  font-family: "Inter", sans-serif;
 
   font-size: 1rem;
   color: #98959d;
@@ -172,4 +180,10 @@
 .column-break {
   display: flex;
   gap: 1rem;
+}
+
+.column-break > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }

@@ -21,7 +21,7 @@ export function hoursLoad({ date, dailySchedules }) {
     // Adiciona a hora na data e verifica se está no passado.
     const isHourPast = dayjs(date).add(scheduleHour, "hour").isBefore(dayjs());
 
-    const available = !unavailableHours.includes(hour) && !isHourPast
+    const available = !unavailableHours.includes(hour) && !isHourPast;
 
     return {
       hour,
@@ -30,33 +30,32 @@ export function hoursLoad({ date, dailySchedules }) {
   });
 
   // Renderiza os horários.
-  opening.forEach(({ hour, available }) => {
-    const li = document.createElement("li");
-
-    li.classList.add("hour");
-    li.classList.add(available ? "hour-available" : "hour-unavailable");
-
-    li.textContent = hour;
-
-    if (hour === "9:00") {
-      hourHeaderAdd("Manhã");
-    } else if (hour === "13:00") {
-      hourHeaderAdd("Tarde");
-    } else if (hour === "18:00") {
-      hourHeaderAdd("Noite");
+  opening.forEach(({ hour, available }, idx) => {
+    const option = document.createElement("option");
+    const isFirstElement = idx === 0;
+    if (isFirstElement) {
+      option.setAttribute("selected", "");
+      option.classList.add("hour-selected");
     }
 
-    hours.append(li);
+    option.classList.add("hour");
+    option.setAttribute("value", hour);
+    console.log(available);
+    if (available) {
+      option.setAttribute("enabled", "");
+      option.removeAttribute("disabled", "");
+      option.classList.add("hour-available");
+    } else {
+      option.removeAttribute("enabled", "");
+      option.setAttribute("disabled", "");
+      option.classList.add("hour-unavailable");
+    }
+
+    option.textContent = hour;
+
+    hours.append(option);
   });
 
   // Adiciona o evento de clique nos horários disponíveis.
   hoursClick();
-}
-
-function hourHeaderAdd(title) {
-  const header = document.createElement("li");
-  header.classList.add("hour-period");
-  header.textContent = title;
-
-  hours.append(header);
 }
