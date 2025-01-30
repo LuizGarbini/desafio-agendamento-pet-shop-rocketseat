@@ -16,22 +16,36 @@ export function schedulesShow({ dailySchedules }) {
     dailySchedules.forEach((schedule) => {
       const item = document.createElement("li");
       const time = document.createElement("strong");
-      const name = document.createElement("span");
+
+      const separator = document.createElement("span");
+      separator.classList.add("separator");
+      separator.innerHTML = "/";
+
+      const petName = document.createElement("span");
+      petName.classList.add("pet-name");
+
+      const clientName = document.createElement("span");
+
+      const boxInfos = document.createElement("div");
+      boxInfos.classList.add("box-infos");
+
+      const serviceDescription = document.createElement("span");
+      serviceDescription.classList.add("service-description");
 
       // Adiciona o id do agendamento.
       item.setAttribute("data-id", schedule.id);
 
       time.textContent = dayjs(schedule.when).format("HH:mm");
-      name.textContent = schedule.name;
+      clientName.textContent = schedule.name;
 
       // Cria ícone de cancelar o agendamento.
-      const cancelIcon = document.createElement("img");
-      cancelIcon.classList.add("cancel-icon");
-      cancelIcon.setAttribute("src", "./src/assets/cancel.svg");
-      cancelIcon.setAttribute("alt", "Cancelar");
+      const cancelButton = document.createElement("span");
+      cancelButton.classList.add("remove-button");
+      cancelButton.setAttribute("alt", "Remover agendamento");
 
       // Adiciona o tempo, nome e o ícone do item.
-      item.append(time, name, cancelIcon);
+      item.append(time, boxInfos, cancelButton);
+      boxInfos.append(petName, separator, clientName);
 
       // Obtém somente a hora
       const hour = dayjs(schedule.when).hour();
@@ -40,7 +54,7 @@ export function schedulesShow({ dailySchedules }) {
       if (hour <= 12) {
         periodMorning.appendChild(item);
       } else if (hour > 12 && hour <= 18) {
-        periodAfernoon.appendChild(item);
+        periodAfternoon.appendChild(item);
       } else {
         periodNight.appendChild(item);
       }

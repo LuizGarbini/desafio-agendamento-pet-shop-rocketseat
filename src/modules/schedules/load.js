@@ -10,7 +10,7 @@ export async function schedulesDay() {
   const date2 = select2.value;
 
   // Buca na API os agendamentos.
-  const dailySchedules = await scheduleFetchByDay({ date });
+  const dailySchedules = await scheduleFetchByDay({ date: date1 });
 
   // Exibe os agendamentos
   schedulesShow({ dailySchedules });

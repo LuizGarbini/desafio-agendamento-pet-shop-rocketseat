@@ -22,6 +22,7 @@ export function hoursLoad({ date, dailySchedules }) {
     const isHourPast = dayjs(date).add(scheduleHour, "hour").isBefore(dayjs());
 
     const available = !unavailableHours.includes(hour) && !isHourPast;
+    console.log(available);
 
     return {
       hour,
@@ -40,7 +41,6 @@ export function hoursLoad({ date, dailySchedules }) {
 
     option.classList.add("hour");
     option.setAttribute("value", hour);
-    console.log(available);
     if (available) {
       option.setAttribute("enabled", "");
       option.removeAttribute("disabled", "");
@@ -50,6 +50,7 @@ export function hoursLoad({ date, dailySchedules }) {
       option.setAttribute("disabled", "");
       option.classList.add("hour-unavailable");
     }
+    console.log({ available });
 
     option.textContent = hour;
 

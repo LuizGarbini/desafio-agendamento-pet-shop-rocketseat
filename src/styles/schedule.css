@@ -76,8 +76,26 @@
   align-items: center;
 }
 
+.box-info {
+  flex: 1;
+}
+
 .schedule-period ul li span {
   flex: 1;
+  text-align: right;
+}
+
+.remove-button {
+  color: #666666;
+}
+
+.pet-name {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.service-description {
+  text-align-last: center;
 }
 
 .cancel-icon {
@@ -91,6 +109,7 @@
 
 .schedule-period ul li strong {
   margin-right: 1.25rem;
+  color: #ffffff;
 }
 
 .button-new-schedule {

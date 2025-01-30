@@ -1,57 +1,28 @@
 {
   "schedules": [
     {
-      "id": "1736984102920",
+      "id": 1738203100865,
       "name": "Luiz Garbini",
-      "when": "2025-01-15T12:00:00.000Z"
-    },
-    {
-      "id": "1736992691983",
-      "name": "Luiz Garbini",
-      "when": "2025-01-16T15:00:00.000Z"
-    },
-    {
-      "id": "1737077601555",
-      "name": "Luiz Garbini",
-      "when": "2025-01-19T14:00:00.000Z"
-    },
-    {
-      "id": "1737423873868",
-      "name": "Luiz Garbini",
-      "when": "2025-01-21T14:00:00.000Z"
-    },
-    {
-      "id": 1738124509214,
-      "name": "Luiz Garbini",
-      "when": "2025-01-29T12:00:00.000Z"
-    },
-    {
-      "id": 1738124981233,
-      "name": "Luiz Garbini",
-      "when": "2025-01-29T13:00:00.000Z"
-    },
-    {
-      "id": 1738125135405,
-      "name": "teste",
-      "pet": "teste",
-      "phone": "(41) 5 1651-6556",
-      "when": "2025-01-29T13:00:00.000Z"
-    },
-    {
-      "id": 1738125354127,
-      "name": "teste",
-      "pet": "teste",
-      "phone": "(55) 5 5555-5555",
-      "description": "teste",
-      "when": "2025-01-29T16:00:00.000Z"
-    },
-    {
-      "id": 1738125509035,
-      "name": "Teste",
-      "pet": "teste",
+      "pet": "Nina",
       "phone": "(54) 9 9905-2795",
-      "description": "teste",
-      "when": "2025-01-29T17:00:00.000Z"
+      "description": "Banho e tosa",
+      "when": "2025-01-30T13:00:00.000Z"
+    },
+    {
+      "id": 1738206273330,
+      "name": "Luiz Garbini",
+      "pet": "Diana",
+      "phone": "(54) 9 9905-2795",
+      "description": "Banho na fedida",
+      "when": "2025-01-30T16:00:00.000Z"
+    },
+    {
+      "id": 1738206353784,
+      "name": "Luiz Garbini",
+      "pet": "Kleber",
+      "phone": "(54) 9 9905-2795",
+      "description": "Seila",
+      "when": "2025-01-30T15:00:00.000Z"
     }
   ]
 }

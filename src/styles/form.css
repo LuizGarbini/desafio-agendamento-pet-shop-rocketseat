@@ -157,13 +157,13 @@
 }
 
 .hour-selected {
-  border: 1px solid #b8952e;
-  color: #b8952e;
+  border: 1px solid #9282fa;
+  color: #9282fa;
 }
 
 .hour:not(.hour-unavailable):hover {
-  border: 1px solid #b8952e;
-  color: #b8952e;
+  border: 1px solid #9282fa;
+  color: #9282fa;
 }
 
 @media (max-width: 1100px) {
