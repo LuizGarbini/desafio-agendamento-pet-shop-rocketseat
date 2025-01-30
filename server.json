@@ -1,7 +1,7 @@
 {
   "schedules": [
     {
-      "id": 1738203100865,
+      "id": "1738203100865",
       "name": "Luiz Garbini",
       "pet": "Nina",
       "phone": "(54) 9 9905-2795",
@@ -9,20 +9,12 @@
       "when": "2025-01-30T13:00:00.000Z"
     },
     {
-      "id": 1738206273330,
+      "id": "1738206273330",
       "name": "Luiz Garbini",
       "pet": "Diana",
       "phone": "(54) 9 9905-2795",
       "description": "Banho na fedida",
       "when": "2025-01-30T16:00:00.000Z"
-    },
-    {
-      "id": 1738206353784,
-      "name": "Luiz Garbini",
-      "pet": "Kleber",
-      "phone": "(54) 9 9905-2795",
-      "description": "Seila",
-      "when": "2025-01-30T15:00:00.000Z"
     }
   ]
 }

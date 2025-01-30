@@ -93,7 +93,7 @@
   border-radius: 0.5rem;
   border: none;
   font-size: 0.87rem;
-  background-color: #b8952e;
+  background-color: #9282fa;
   color: #050505;
   text-transform: uppercase;
   font-weight: 700;
@@ -104,7 +104,7 @@
 }
 
 .button:hover {
-  background-color: #dbc170;
+  background-color: #bdb4fa;
 }
 
 ::-webkit-calendar-picker-indicator {

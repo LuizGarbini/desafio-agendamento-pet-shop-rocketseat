@@ -83,6 +83,7 @@
 .schedule-period ul li span {
   flex: 1;
   text-align: right;
+  cursor: pointer;
 }
 
 .remove-button {

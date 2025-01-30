@@ -6,7 +6,7 @@ const periods = document.querySelectorAll(".period");
 periods.forEach((period) => {
   // Captura o evento de clique na lista.
   period.addEventListener("click", async (event) => {
-    if (event.target.classList.contains("cancel-icon")) {
+    if (event.target.classList.contains("remove-button")) {
       //  Obtém a <li> pai do elemento clicado.
       const item = event.target.closest("li");
 

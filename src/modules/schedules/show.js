@@ -17,12 +17,13 @@ export function schedulesShow({ dailySchedules }) {
       const item = document.createElement("li");
       const time = document.createElement("strong");
 
-      const separator = document.createElement("span");
-      separator.classList.add("separator");
-      separator.innerHTML = "/";
-
       const petName = document.createElement("span");
       petName.classList.add("pet-name");
+      petName.textContent = schedule.pet;
+
+      const separator = document.createElement("span");
+      separator.classList.add("separator");
+      separator.innerHTML = " / ";
 
       const clientName = document.createElement("span");
 
@@ -31,6 +32,7 @@ export function schedulesShow({ dailySchedules }) {
 
       const serviceDescription = document.createElement("span");
       serviceDescription.classList.add("service-description");
+      serviceDescription.textContent = schedule.description;
 
       // Adiciona o id do agendamento.
       item.setAttribute("data-id", schedule.id);
@@ -42,9 +44,10 @@ export function schedulesShow({ dailySchedules }) {
       const cancelButton = document.createElement("span");
       cancelButton.classList.add("remove-button");
       cancelButton.setAttribute("alt", "Remover agendamento");
+      cancelButton.textContent = "Remover agendamento";
 
       // Adiciona o tempo, nome e o ícone do item.
-      item.append(time, boxInfos, cancelButton);
+      item.append(time, boxInfos, serviceDescription, cancelButton);
       boxInfos.append(petName, separator, clientName);
 
       // Obtém somente a hora
